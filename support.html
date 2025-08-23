@@ -1,34 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Support - Trilogy Labs</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support - Trilogy Labs</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <style>
+    /* Reuse homepage variables + styles */
+    :root{
+      --bg:#f7f9fc; --card:#ffffff; --text:#0f172a; --muted:#475569; --border:#e5eaf3;
+      --brand:#2563eb; --brand-ink:#1e40af; --shadow: 0 10px 25px rgba(2, 6, 23, 0.08);
+      --radius: 18px;
+    }
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color:var(--text); background: var(--bg); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* Background blobs */
+    .bg-wrap{ position:fixed; inset:0; overflow:hidden; z-index:-1; }
+    .blob{ position:absolute; filter: blur(60px); opacity:.45; transform: translateZ(0); }
+    .blob-1{ width:520px; height:520px; border-radius:50%;
+      background: radial-gradient(closest-side,#93c5fd, transparent 70%); top:-120px; left:-120px; }
+    .blob-2{ width:540px; height:540px; border-radius:50%;
+      background: radial-gradient(closest-side,#c7d2fe, transparent 70%); right:-160px; bottom:-160px; }
+
+    /* Layout */
+    .page{ max-width: 1024px; margin: 0 auto; padding: 32px 20px 56px; }
+
+    /* Header */
+    .site-header{ display:flex; align-items:center; justify-content:space-between; padding: 8px 6px 22px; }
+    .brand{ display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.12em; font-size:14px; }
+    .brand-mark{ font-size:14px; color:var(--brand); }
+    .brand-text{ color:var(--brand-ink); }
+    .btn-ghost{
+      border:1px solid var(--border); background:#fff; padding:10px 14px; border-radius:12px;
+      text-decoration:none; color:var(--text); font-weight:500; transition: all .2s ease;
+    }
+    .btn-ghost:hover{ transform: translateY(-1px); box-shadow: var(--shadow); }
+
+    /* Cards */
+    .card{ background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+
+    /* Support Section */
+    .support-card{
+      padding: clamp(28px, 4vw, 44px);
+      animation: fadeUp .45s ease-out both;
+    }
+    h1{ font-size: clamp(32px, 6vw, 44px); line-height: 1.2; margin: 0 0 16px; }
+    .support-text{ font-size: 18px; color: var(--muted); margin-bottom: 20px; }
+    .support-email{ margin: 16px 0; font-size: 16px; }
+    .support-email a{
+      display:inline-block; font-weight:600; color: var(--brand-ink);
+      text-decoration:none; padding:6px 10px; background:#f1f5ff; border:1px solid #e5edff; border-radius:8px;
+    }
+    .support-email a:hover{ background:#e0e7ff; }
+    .support-response{ color: var(--muted); margin-top: 20px; }
+
+    /* Footer */
+    .site-footer{
+      margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--border);
+      display:grid; gap: 10px; justify-items:center; text-align:center;
+    }
+    .footer-link{
+      text-decoration:none; color:#334155; font-weight:600; padding:6px 10px; border-radius:8px;
+      transition: background .2s ease, transform .2s ease;
+    }
+    .footer-link:hover{ background:#eef2ff; transform: translateY(-1px); }
+
+    @keyframes fadeUp{ from{ opacity:0; transform: translateY(6px); } to{ opacity:1; transform: translateY(0); } }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="card main-card">
-            <header>
-                <div class="logo">
-                    TRILOGY LABS
-                </div>
-                <a href="/" class="contact-btn">Home</a>
-            </header>
-            <main>
-                <h1>Support</h1>
-                <div class="support-content">
-                    <p class="support-text">Need help with our apps? Contact us below:</p>
-                    <div class="support-email">
-                        <p>Email:</p>
-                        <a href="mailto:team@trilogy-labs.com" class="email-link">team@trilogy-labs.com</a>
-                    </div>
-                    <p class="support-response">We'll respond to your inquiries as soon as possible.</p>
-                </div>
-            </main>
-        </div>
-    </div>
+  <!-- Decorative background -->
+  <div class="bg-wrap" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </div>
+
+  <div class="page">
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">▮▮▮</span>
+        <span class="brand-text">TRILOGY LABS</span>
+      </div>
+      <nav class="site-nav">
+        <a href="/" class="btn-ghost">Home</a>
+      </nav>
+    </header>
+
+    <main class="support-card card">
+      <h1>Support</h1>
+      <p class="support-text">Need help with our apps? Contact us below:</p>
+      <div class="support-email">
+        <p>Email:</p>
+        <a href="mailto:team@trilogy-labs.com">team@trilogy-labs.com</a>
+      </div>
+      <p class="support-response">We'll respond to your inquiries as soon as possible.</p>
+    </main>
+
+    <footer class="site-footer">
+      <a href="/florafinds/privacy-policy" class="footer-link">FloraFinds App Privacy Policy</a>
+      <a href="/refina/privacy-policy.html" class="footer-link">Refina App Privacy Policy</a>
+      <a href="/ink-and-sky/privacy-policy.html" class="footer-link">Ink &amp; Sky App Privacy Policy</a>
+    </footer>
+  </div>
 </body>
-</html> 
+</html>
