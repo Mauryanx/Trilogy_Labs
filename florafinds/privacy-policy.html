@@ -11,86 +11,149 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            color: #333;
+            color: #D4A574;
+            background-color: #1a1a1a;
         }
         h1, h2 {
-            color: #2e7d32;
+            color: #E8B4B8;
         }
         h1 {
-            border-bottom: 2px solid #2e7d32;
+            border-bottom: 2px solid #E8B4B8;
             padding-bottom: 10px;
         }
         .last-updated {
-            color: #666;
+            color: #C9A96E;
             font-style: italic;
+        }
+        a {
+            color: #F7CAC9;
+        }
+        a:hover {
+            color: #E8B4B8;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: #D4A574;
+            margin-bottom: 24px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+        th {
+            background-color: #2a2a2a;
+            color: #E8B4B8;
+        }
+        td {
+            background-color: #1f1f1f;
+        }
+        ol, ul {
+            padding-left: 1.2rem;
         }
     </style>
 </head>
 <body>
-    <h1>FloraFinds Privacy Policy</h1>
-    <p class="last-updated">Last Updated: [April 26, 2025]</p>
+    <h1>FloraFinds Privacy Policy & Terms</h1>
+    <p class="last-updated">Last Updated: August 23, 2025</p>
 
-    <h2>1. Introduction</h2>
-    <p>Welcome to FloraFinds. This privacy policy explains how we collect, use, and protect your information when you use our plant identification app.</p>
+    <h2>Who We Are</h2>
+    <p>"FloraFinds", "we", "our", or "us" means Trilogy Labs LLC, United States.</p>
 
-    <h2>2. Information We Collect</h2>
-    <h3>2.1 Photos</h3>
-    <p>We collect photos you take or upload for plant identification. These photos are processed by OpenAI's GPT-4o Vision API and are not stored permanently.</p>
+    <h2>Age Notice</h2>
+    <p>FloraFinds is intended for users aged 13 and older. We do not knowingly collect data from children under 13.</p>
 
-    <h3>2.2 Usage Data</h3>
-    <p>We collect anonymous usage data through Firebase Analytics to improve our app. This includes:</p>
+    <h2>What We Collect &amp; Why</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Examples</th>
+                <th>Purpose</th>
+                <th>Legal Basis*</th>
+                <th>Retention</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Account / Identity</td>
+                <td>Email (if signing in with Google/Apple), display name (optional), Firebase UID (may be anonymous)</td>
+                <td>Authentication, sync across devices, user support</td>
+                <td>Contract; Legitimate interest</td>
+                <td>Until account deletion + 180 days in backups</td>
+            </tr>
+            <tr>
+                <td>Plant Photos</td>
+                <td>Uploaded images; metadata (timestamp, orientation)</td>
+                <td>Identify plants via AI processing and return results</td>
+                <td>Consent; Contract</td>
+                <td>User-controlled (deletable in-app); transient copies for AI processing only</td>
+            </tr>
+            <tr>
+                <td>App Usage / Analytics</td>
+                <td>Crash logs, performance metrics, feature usage</td>
+                <td>Improve reliability and features</td>
+                <td>Legitimate interest</td>
+                <td>30–90 days (per Firebase defaults)</td>
+            </tr>
+            <tr>
+                <td>Device / Log</td>
+                <td>Device model, OS version, approximate region (IP), push notification tokens</td>
+                <td>Security, notifications, fraud prevention</td>
+                <td>Legitimate interest</td>
+                <td>Up to 90 days (tokens rotate)</td>
+            </tr>
+            <tr>
+                <td>Advertising (AdMob)</td>
+                <td>Advertising identifiers, device info, ad performance</td>
+                <td>Serve ads, measure effectiveness, limit frequency</td>
+                <td>Consent (where required); Legitimate interest</td>
+                <td>Per Google AdMob policy</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>*GDPR art. 6 legal bases; CCPA/CPRA = “business purpose”, not selling/sharing.</p>
+
+    <h2>How We Use Data</h2>
+    <ol>
+        <li>Identify plants using GPT-4o Vision AI.</li>
+        <li>Show relevant ads through AdMob (with personalization options).</li>
+        <li>Improve stability and performance through analytics and crash logs.</li>
+        <li>Deliver notifications (if enabled).</li>
+    </ol>
+
+    <h2>Third-Party Services</h2>
     <ul>
-        <li>App performance metrics</li>
-        <li>Crash reports</li>
-        <li>Feature usage statistics</li>
+        <li><strong>OpenAI:</strong> Used for plant image recognition (images not stored permanently).</li>
+        <li><strong>Firebase:</strong> Authentication, Firestore, Analytics, Crashlytics, Storage.</li>
+        <li><strong>Google AdMob:</strong> Advertising and performance metrics.</li>
     </ul>
 
-    <h3>2.3 Advertising Data</h3>
-    <p>We use Google AdMob to show ads. AdMob collects device information for ad personalization and performance measurement.</p>
+    <h2>Data Security</h2>
+    <p>We apply security measures including encrypted transmission, authentication controls, and minimal data storage. Photos are deleted when you request or remove them in-app.</p>
 
-    <h2>3. How We Use Your Information</h2>
+    <h2>Your Rights</h2>
+    <p>You may:</p>
     <ul>
-        <li>Plant identification using GPT-4o Vision</li>
-        <li>App improvement and bug fixes</li>
-        <li>Anonymous analytics</li>
-        <li>Ad serving and optimization</li>
+        <li>Request access to your data</li>
+        <li>Delete photos or your account at any time</li>
+        <li>Opt-out of analytics (device settings)</li>
+        <li>Control ad personalization via system settings</li>
     </ul>
 
-    <h2>4. Third-Party Services</h2>
-    <h3>4.1 OpenAI</h3>
-    <p>We use OpenAI's GPT-4o Vision API for plant identification. Photos are sent to OpenAI for processing but are not stored by them.</p>
+    <h2>International Transfers</h2>
+    <p>Data may be processed in the United States or other regions where Firebase and OpenAI operate. Transfers rely on EU Standard Contractual Clauses and provider safeguards.</p>
 
-    <h3>4.2 Firebase</h3>
-    <p>We use Firebase for anonymous authentication, analytics, and crash reporting.</p>
+    <h2>Children’s Privacy</h2>
+    <p>We do not knowingly collect information from children under 13. If you believe we have, contact us to request deletion.</p>
 
-    <h3>4.3 Google AdMob</h3>
-    <p>We use AdMob to serve ads. AdMob collects device information for ad personalization.</p>
+    <h2>Changes</h2>
+    <p>We may update this policy. Significant changes will be notified in-app or by email 30 days in advance.</p>
 
-    <h2>5. Data Security</h2>
-    <p>We implement security measures to protect your information, including:</p>
-    <ul>
-        <li>Anonymous authentication</li>
-        <li>Secure data transmission</li>
-        <li>Limited data retention</li>
-    </ul>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:team@trilogy-labs.com">team@trilogy-labs.com</a></p>
 
-    <h2>6. Your Rights</h2>
-    <p>You have the right to:</p>
-    <ul>
-        <li>Access your data</li>
-        <li>Request data deletion</li>
-        <li>Opt-out of analytics</li>
-        <li>Control ad personalization</li>
-    </ul>
-
-    <h2>7. Children's Privacy</h2>
-    <p>Our app is not intended for children under 13. We do not knowingly collect personal information from children under 13.</p>
-
-    <h2>8. Changes to This Policy</h2>
-    <p>We may update this privacy policy. We will notify you of any changes by posting the new policy on this page.</p>
-
-    <h2>9. Contact Us</h2>
-    <p>If you have questions about this privacy policy, please contact us at:</p>
-    <p>Email: [seanch7@gmail.com]</p>
+    <hr>
+    <p style="text-align:center;">END OF POLICY</p>
 </body>
 </html>
