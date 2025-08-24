@@ -12,15 +12,15 @@
   <!-- Smart App Banner (iOS Safari for FloraFinds) -->
   <meta name="apple-itunes-app" content="app-id=6745113166">
 
-  <!-- Open Graph (use absolute, canonical URL + single image with dimensions) -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Trilogy Labs">
   <meta property="og:title" content="Trilogy Labs — AI-powered applications">
   <meta property="og:description" content="We build AI-powered apps like FloraFinds and Refina to make AI useful, approachable, and delightful.">
   <meta property="og:url" content="https://trilogy-labs.com/">
-  <!-- New banner (1200x630) -->
-  <meta property="og:image" content="https://trilogy-labs.com/assets/og/trilogy-og-1200x630.png">
-  <meta property="og:image:secure_url" content="https://trilogy-labs.com/assets/og/trilogy-og-1200x630.png">
+  <!-- ✅ Points to the real file in /assets -->
+  <meta property="og:image" content="https://trilogy-labs.com/assets/trilogy-banner.png">
+  <meta property="og:image:secure_url" content="https://trilogy-labs.com/assets/trilogy-banner.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -30,7 +30,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Trilogy Labs — AI-powered applications">
   <meta name="twitter:description" content="We build AI-powered apps like FloraFinds and Refina to make AI useful, approachable, and delightful.">
-  <meta name="twitter:image" content="https://trilogy-labs.com/assets/og/trilogy-og-1200x630.png">
+  <meta name="twitter:image" content="https://trilogy-labs.com/assets/trilogy-banner.png">
 
   <style>
     /* Base */
@@ -180,7 +180,8 @@
         <span class="brand-text">TRILOGY LABS</span>
       </div>
       <nav class="site-nav">
-        <a href="support.html" class="btn-ghost">Support</a>
+        <!-- absolute so it works from any path -->
+        <a href="/support.html" class="btn-ghost">Support</a>
       </nav>
     </header>
 
@@ -220,7 +221,8 @@
           </ul>
           <div class="product-actions">
             <a class="btn btn-primary" href="https://apps.apple.com/us/app/florafinds/id6745113166" target="_blank" rel="noopener">View on App Store</a>
-            <a class="btn-secondary" href="/florafinds/privacy-policy">Privacy Policy</a>
+            <!-- fixed .html -->
+            <a class="btn-secondary" href="/florafinds/privacy-policy.html">Privacy Policy</a>
           </div>
         </article>
 
@@ -274,12 +276,12 @@
       <div class="about-content">
         <h2>About Trilogy Labs LLC</h2>
         <p>Trilogy Labs LLC specializes in building AI-powered applications designed to enhance productivity, automation, and user experiences. We focus on developing innovative software solutions for businesses and consumers alike.</p>
-        <a href="support.html" class="support-link">Need assistance? Visit our Support Page →</a>
+        <a href="/support.html" class="support-link">Need assistance? Visit our Support Page →</a>
       </div>
     </section>
 
     <footer class="site-footer">
-      <a href="/florafinds/privacy-policy" class="footer-link">FloraFinds App Privacy Policy</a>
+      <a href="/florafinds/privacy-policy.html" class="footer-link">FloraFinds App Privacy Policy</a>
       <a href="/refina/privacy-policy.html" class="footer-link">Refina App Privacy Policy</a>
       <a href="/ink-and-sky/privacy-policy.html" class="footer-link">Ink &amp; Sky App Privacy Policy</a>
     </footer>
