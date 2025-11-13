@@ -9,16 +9,15 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="canonical" href="https://trilogy-labs.com/">
 
-  <!-- Smart App Banner (iOS Safari for FloraFinds) -->
-  <meta name="apple-itunes-app" content="app-id=6745113166">
+  <!-- Smart App Banner (iOS Safari for FloraFinds & Ink & Sky) -->
+  <meta name="apple-itunes-app" content="app-id=6745113166, app-id=6748705019">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Trilogy Labs">
   <meta property="og:title" content="Trilogy Labs — AI-powered applications">
-  <meta property="og:description" content="We build AI-powered apps like FloraFinds and Refina to make AI useful, approachable, and delightful.">
+  <meta property="og:description" content="We build AI-powered apps like FloraFinds, Refina, and Ink & Sky to make AI useful, approachable, and delightful.">
   <meta property="og:url" content="https://trilogy-labs.com/">
-  <!-- ✅ Points to the real file in /assets -->
   <meta property="og:image" content="https://trilogy-labs.com/assets/trilogy-banner-v2.png">
   <meta property="og:image:secure_url" content="https://trilogy-labs.com/assets/trilogy-banner-v2.png">
   <meta property="og:image:type" content="image/png">
@@ -29,7 +28,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Trilogy Labs — AI-powered applications">
-  <meta name="twitter:description" content="We build AI-powered apps like FloraFinds and Refina to make AI useful, approachable, and delightful.">
+  <meta name="twitter:description" content="We build AI-powered apps like FloraFinds, Refina, and Ink & Sky.">
   <meta name="twitter:image" content="https://trilogy-labs.com/assets/trilogy-banner-v2.png">
 
   <style>
@@ -122,7 +121,6 @@
     .app-logo img{
       width:100%; height:100%; object-fit:cover; display:block;
     }
-    .logo-is{ background: linear-gradient(135deg,#a78bfa,#7c3aed); } /* Ink & Sky placeholder */
     .app-title{ font-weight:700; letter-spacing:-0.01em; }
     .app-blurb{ color: var(--muted); line-height:1.6; margin:2px 0 0; }
     .bullets{ margin: 2px 0 0; padding-left: 18px; color: var(--muted); }
@@ -134,7 +132,6 @@
       transition: transform .15s ease, box-shadow .15s ease;
     }
     .btn-secondary:hover{ transform: translateY(-1px); box-shadow: var(--shadow); }
-    .btn-disabled{ opacity:.6; cursor:not-allowed; pointer-events:none; }
     .tag{
       display:inline-block; font-size:12px; padding:4px 8px; border-radius:999px;
       background:#eff6ff; border:1px solid #dbeafe; color:#1e40af; font-weight:600;
@@ -160,12 +157,12 @@
     }
     .footer-link:hover{ background:#eef2ff; transform: translateY(-1px); }
 
-    /* Motion + responsiveness */
     @keyframes fadeUp{ from{ opacity:0; transform: translateY(6px); } to{ opacity:1; transform: translateY(0); } }
     @media (min-width: 720px){ .br-md{ display:inline; } .hero{ gap:22px; } .cta-row{ gap:18px; } }
     @media (prefers-reduced-motion: reduce){ *{ animation:none !important; transition:none !important; } }
   </style>
 </head>
+
 <body>
   <!-- Decorative background -->
   <div class="bg-wrap" aria-hidden="true">
@@ -180,7 +177,6 @@
         <span class="brand-text">TRILOGY LABS</span>
       </div>
       <nav class="site-nav">
-        <!-- absolute so it works from any path -->
         <a href="/support.html" class="btn-ghost">Support</a>
       </nav>
     </header>
@@ -202,6 +198,7 @@
       <p class="intro">A few of the tools we’re building to make AI useful, approachable, and delightful.</p>
 
       <div class="product-grid">
+
         <!-- FloraFinds -->
         <article class="product-card">
           <div class="app-head">
@@ -221,7 +218,6 @@
           </ul>
           <div class="product-actions">
             <a class="btn btn-primary" href="https://apps.apple.com/us/app/florafinds/id6745113166" target="_blank" rel="noopener">View on App Store</a>
-            <!-- fixed .html -->
             <a class="btn-secondary" href="/florafinds/privacy-policy.html">Privacy Policy</a>
           </div>
         </article>
@@ -249,15 +245,18 @@
           </div>
         </article>
 
-        <!-- Ink & Sky -->
+        <!-- Ink & Sky (Updated) -->
         <article class="product-card">
           <div class="app-head">
-            <div class="app-logo logo-is">IS</div>
+            <div class="app-logo">
+              <img src="/assets/ink-and-sky-logo.png" alt="Ink & Sky logo" />
+            </div>
             <div>
               <div class="app-title">Ink &amp; Sky</div>
-              <div class="tag">Under development</div>
+              <div class="tag">iOS</div>
             </div>
           </div>
+
           <p class="app-blurb">Daily quote visuals with smart scheduling — curated lines, clean typography, and share-ready images.</p>
           <ul class="bullets">
             <li>Beautiful, minimal templates</li>
@@ -265,10 +264,11 @@
             <li>Time-zone friendly posting</li>
           </ul>
           <div class="product-actions">
-            <a class="btn-secondary btn-disabled" href="#" aria-disabled="true">App Store (coming soon)</a>
+            <a class="btn btn-primary" href="https://apps.apple.com/us/app/ink-sky-daily-quotes/id6748705019" target="_blank" rel="noopener">View on App Store</a>
             <a class="btn-secondary" href="/ink-and-sky/privacy-policy.html">Privacy Policy</a>
           </div>
         </article>
+
       </div>
     </section>
 
