@@ -28,7 +28,7 @@ td { background-color: #1f1f1f; }
 <body>
 
 <h1>Refina Privacy Policy & Terms</h1>
-<p class="last-updated">Last Updated: June 19, 2025</p>
+<p class="last-updated">Last Updated: July 9, 2026</p>
 
 <h2>Who We Are</h2>
 <p>"Refina", "EnhanceMe", "we", "our", or "us" means Trilogy Labs LLC, United States.</p>
@@ -60,9 +60,17 @@ td { background-color: #1f1f1f; }
 <tr>
 <td style="border:1px solid #ccc;padding:8px;">Photos / Videos</td>
 <td style="border:1px solid #ccc;padding:8px;">Reference & enhanced images, metadata (angle, timestamp)</td>
-<td style="border:1px solid #ccc;padding:8px;">Generate AI previews; cloud backup for user convenience</td>
+<td style="border:1px solid #ccc;padding:8px;">Generate AI previews and Facial Dossier reports; cloud backup for user convenience</td>
 <td style="border:1px solid #ccc;padding:8px;">Consent; Contract</td>
 <td style="border:1px solid #ccc;padding:8px;">User-controlled (you can delete in-app)</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc;padding:8px;">Profile Details</td>
+<td style="border:1px solid #ccc;padding:8px;">Age, gender, ethnicity, appearance goals (all user-provided)</td>
+<td style="border:1px solid #ccc;padding:8px;">Personalize AI previews and Facial Dossier reports</td>
+<td style="border:1px solid #ccc;padding:8px;">Consent</td>
+<td style="border:1px solid #ccc;padding:8px;">Until account deletion</td>
 </tr>
 
 <tr>
@@ -96,7 +104,7 @@ td { background-color: #1f1f1f; }
 
 <h2>How We Use Data</h2>
 <ol>
-<li>Provide core functions (login, photo upload, AI processing).</li>
+<li>Provide core functions (login, photo upload, AI previews and Facial Dossiers).</li>
 <li>Validate trials and subscriptions via Superwall.</li>
 <li>Prevent trial abuse or fraud (device & IP checks).</li>
 <li>Improve stability through Crashlytics error reports.</li>
@@ -109,7 +117,7 @@ td { background-color: #1f1f1f; }
 <ul>
 <li><strong>Encryption:</strong> All facial images encrypted in transit</li>
 <li><strong>Access Controls:</strong> Strict authentication required</li>
-<li><strong>Processing Limitation:</strong> Used only for AI preview generation</li>
+<li><strong>Processing Limitation:</strong> Used only for AI preview and Facial Dossier generation</li>
 <li><strong>No Identification:</strong> No facial recognition used</li>
 <li><strong>Secure Processing:</strong> AI processing via Firebase Cloud Functions</li>
 <li><strong>User Control:</strong> Users can delete their facial data anytime</li>
@@ -118,26 +126,26 @@ td { background-color: #1f1f1f; }
 
 <h2>AI Processing and Third-Party Services</h2>
 
-<p><strong>Facial Enhancement Processing:</strong></p>
+<p><strong>Facial Enhancement & Dossier Processing:</strong></p>
 
 <ul>
-<li>When a user chooses to generate an AI preview, the selected facial image and enhancement parameters are securely transmitted via API to our third-party AI processing provider <strong>Replicate, Inc.</strong></li>
+<li>When a user requests an AI preview or a Facial Dossier, their facial photos, user-provided profile details (such as age, gender, and ethnicity), and selected parameters are securely transmitted via API to our third-party AI processing providers: <strong>Replicate, Inc.</strong>, <strong>OpenAI</strong>, and <strong>Anthropic</strong>.</li>
 
-<li>This transmission occurs only after the user voluntarily uploads a photo and requests AI processing. By initiating the preview generation, the user consents to this secure transmission.</li>
+<li>This transmission occurs only after the user voluntarily uploads photos and requests AI processing. By initiating generation, the user consents to this secure transmission.</li>
 
-<li>The transmitted data may include the uploaded facial image and selected cosmetic enhancement parameters required to generate the preview.</li>
+<li>The transmitted data may include the uploaded facial photos, user-provided profile details, and the selected cosmetic enhancement or analysis parameters required to generate the result.</li>
 
-<li>Processing occurs through Firebase Cloud Functions acting as a secure intermediary.</li>
+<li>Processing occurs through our secure backend acting as an intermediary.</li>
 
-<li>Replicate processes images transiently to generate the requested result and does not retain images after processing is completed.</li>
+<li>These providers process the data solely to generate the requested results and do not use it to train their models.</li>
 
-<li>The resulting enhanced image is returned to the app and stored only in the user's secure account storage.</li>
+<li>The resulting previews and reports are returned to the app and stored only in the user's secure account storage.</li>
 </ul>
 
 <p><strong>Data Minimization:</strong></p>
 
 <ul>
-<li>Only facial photos necessary for enhancement previews are processed.</li>
+<li>Only the facial photos necessary for enhancement previews and Facial Dossier reports are processed.</li>
 <li>No facial data is used for advertising, marketing, or research purposes.</li>
 <li>No facial data is shared with advertising networks or social media platforms.</li>
 </ul>
@@ -168,6 +176,20 @@ td { background-color: #1f1f1f; }
 <td style="border:1px solid #ccc;padding:8px;">AI facial enhancement processing</td>
 <td style="border:1px solid #ccc;padding:8px;">US</td>
 <td style="border:1px solid #ccc;padding:8px;">Transient processing only</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc;padding:8px;">OpenAI</td>
+<td style="border:1px solid #ccc;padding:8px;">AI image generation (previews & dossier reports)</td>
+<td style="border:1px solid #ccc;padding:8px;">US</td>
+<td style="border:1px solid #ccc;padding:8px;">API data not used for model training</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc;padding:8px;">Anthropic</td>
+<td style="border:1px solid #ccc;padding:8px;">AI facial analysis & dossier report text</td>
+<td style="border:1px solid #ccc;padding:8px;">US</td>
+<td style="border:1px solid #ccc;padding:8px;">API data not used for model training</td>
 </tr>
 
 <tr>
@@ -202,7 +224,7 @@ td { background-color: #1f1f1f; }
 <p>Account data kept while account exists. User-deleted photos removed immediately. AI processing files deleted immediately after processing.</p>
 
 <h2>Automated Processing</h2>
-<p>AI preview generation is automated but has no legal or similarly significant effect.</p>
+<p>AI preview and Facial Dossier generation is automated but has no legal or similarly significant effect.</p>
 
 <h2>Changes</h2>
 <p>Updates will be posted here and users notified before major changes.</p>
