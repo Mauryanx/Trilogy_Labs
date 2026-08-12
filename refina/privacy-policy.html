@@ -28,7 +28,7 @@ td { background-color: #1f1f1f; }
 <body>
 
 <h1>Refina Privacy Policy & Terms</h1>
-<p class="last-updated">Last Updated: July 9, 2026</p>
+<p class="last-updated">Last Updated: August 11, 2026</p>
 
 <h2>Who We Are</h2>
 <p>"Refina", "EnhanceMe", "we", "our", or "us" means Trilogy Labs LLC, United States.</p>
@@ -90,8 +90,16 @@ td { background-color: #1f1f1f; }
 </tr>
 
 <tr>
+<td style="border:1px solid #ccc;padding:8px;">Advertising Measurement</td>
+<td style="border:1px solid #ccc;padding:8px;">Device advertising identifier; app events (install, trial start, subscription)</td>
+<td style="border:1px solid #ccc;padding:8px;">Measure how our own ads perform</td>
+<td style="border:1px solid #ccc;padding:8px;">Consent (iOS ATT) / Legitimate interest</td>
+<td style="border:1px solid #ccc;padding:8px;">Per Meta's retention policy</td>
+</tr>
+
+<tr>
 <td style="border:1px solid #ccc;padding:8px;">Crash Data</td>
-<td style="border:1px solid #ccc;padding:8px;">Stack traces, Firebase Crashlytics IDs</td>
+<td style="border:1px solid #ccc;padding:8px;">Crash &amp; performance reports collected by the app stores; app-usage events via Firebase Analytics</td>
 <td style="border:1px solid #ccc;padding:8px;">Diagnose and fix app crashes</td>
 <td style="border:1px solid #ccc;padding:8px;">Legitimate interest</td>
 <td style="border:1px solid #ccc;padding:8px;">90 days</td>
@@ -107,11 +115,11 @@ td { background-color: #1f1f1f; }
 <li>Provide core functions (login, photo upload, AI previews and Facial Dossiers).</li>
 <li>Validate trials and subscriptions via Superwall.</li>
 <li>Prevent trial abuse or fraud (device & IP checks).</li>
-<li>Improve stability through Crashlytics error reports.</li>
+<li>Improve stability through crash and performance reports.</li>
 <li>Send essential emails or in-app messages (e.g., password reset, receipt).</li>
 </ol>
 
-<p>We do not show third-party ads or track you across other apps.</p>
+<p>We do not show third-party ads inside Refina, and we never sell your personal data. We do measure how our own ads perform: the Meta (Facebook) SDK shares your device advertising identifier and basic app events, such as install and subscription, with Meta Platforms, Inc. On iOS this happens only if you allow tracking when the system prompt appears. On Android you can limit it at any time in Settings &rarr; Privacy &rarr; Ads, by deleting or resetting your advertising ID. We never send your photos, your Facial Dossier, or your advisor conversations to Meta or to any advertising partner.</p>
 
 <h2>Facial Data Protection</h2>
 <ul>
@@ -129,7 +137,7 @@ td { background-color: #1f1f1f; }
 <p><strong>Facial Enhancement & Dossier Processing:</strong></p>
 
 <ul>
-<li>When a user requests an AI preview or a Facial Dossier, their facial photos, user-provided profile details (such as age, gender, and ethnicity), and selected parameters are securely transmitted via API to our third-party AI processing providers: <strong>Replicate, Inc.</strong>, <strong>OpenAI</strong>, and <strong>Anthropic</strong>.</li>
+<li>When a user requests an AI preview or a Facial Dossier, their facial photos, user-provided profile details (such as age, gender, and ethnicity), and selected parameters are securely transmitted via API to our third-party AI processing providers: <strong>Replicate, Inc.</strong>, <strong>OpenAI, L.L.C.</strong>, and <strong>OpenRouter, Inc.</strong> OpenRouter routes requests to the model providers that serve them, currently <strong>Google LLC</strong> (Gemini) and <strong>Alibaba Cloud</strong> (Qwen).</li>
 
 <li>This transmission occurs only after the user voluntarily uploads photos and requests AI processing. By initiating generation, the user consents to this secure transmission.</li>
 
@@ -186,10 +194,24 @@ td { background-color: #1f1f1f; }
 </tr>
 
 <tr>
-<td style="border:1px solid #ccc;padding:8px;">Anthropic</td>
-<td style="border:1px solid #ccc;padding:8px;">AI facial analysis & dossier report text</td>
+<td style="border:1px solid #ccc;padding:8px;">OpenRouter</td>
+<td style="border:1px solid #ccc;padding:8px;">Routing layer for AI facial analysis, dossier report text, and advisor chat</td>
 <td style="border:1px solid #ccc;padding:8px;">US</td>
 <td style="border:1px solid #ccc;padding:8px;">API data not used for model training</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc;padding:8px;">Google (Gemini) &amp; Alibaba Cloud (Qwen)</td>
+<td style="border:1px solid #ccc;padding:8px;">Model providers reached through OpenRouter</td>
+<td style="border:1px solid #ccc;padding:8px;">US / Singapore</td>
+<td style="border:1px solid #ccc;padding:8px;">API data not used for model training; EU SCCs where applicable</td>
+</tr>
+
+<tr>
+<td style="border:1px solid #ccc;padding:8px;">Meta Platforms</td>
+<td style="border:1px solid #ccc;padding:8px;">Advertising measurement for our own campaigns (advertising identifier and app events only &mdash; never photos or reports)</td>
+<td style="border:1px solid #ccc;padding:8px;">US</td>
+<td style="border:1px solid #ccc;padding:8px;">EU SCCs + Data Privacy Framework</td>
 </tr>
 
 <tr>
@@ -209,13 +231,13 @@ td { background-color: #1f1f1f; }
 </tbody>
 </table>
 
-<p>No other third-party analytics, ad networks, or CDNs are integrated.</p>
+<p>We use Firebase Analytics for product analytics and the Meta SDK solely to measure our own advertising, both listed above. No advertising networks serve ads inside Refina, and no other third-party analytics or CDNs are integrated.</p>
 
 <h2>International Transfers</h2>
 <p>Data may be processed in the United States or other regions where Firebase operates.</p>
 
 <h2>Your Rights</h2>
-<p>You may access, export, or delete your data anytime via Settings → Account → Delete Account or by emailing team@trilogy-labs.com.</p>
+<p>You may access, export, or delete your data at any time from inside the app: <strong>Settings &rarr; Delete Account</strong>. If you no longer have the app installed, use our <a href="/refina/delete-account.html">account deletion request page</a>, or email team@trilogy-labs.com.</p>
 
 <h2>Security</h2>
 <p>All images encrypted in transit (TLS 1.2+) and at rest (AES-256). Strict authentication ensures users only access their own data.</p>
