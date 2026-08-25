@@ -27,16 +27,21 @@ footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #2a2a2a; fon
 <body>
 
 <h1>Refina Terms and Conditions &amp; Privacy Policy</h1>
-<p class="last-updated">Last Updated: August 11, 2026</p>
-<p>This is the same document users review and accept inside the Refina app. It applies to the Refina app on both the Apple App&nbsp;Store and Google&nbsp;Play (package <code>com.trilogylabsllc.enhanceme</code>).</p>
+<p class="last-updated">Last Updated: August 25, 2026</p>
+<p>These are the Terms and Conditions for the Refina app on both the Apple App&nbsp;Store and Google&nbsp;Play (package <code>com.trilogylabsllc.enhanceme</code>). This page is the current version; where an older version is still displayed inside the app, this page governs.</p>
 
 <h2>Who We Are</h2>
 <p>"Refina", "EnhanceMe", "we", "our", or "us" means Trilogy Labs LLC, United States.</p>
 
+<h2>Age Requirement</h2>
+<p>Refina is intended only for adults aged <strong>18 or older</strong>. By creating an account or using the app you confirm that you are at least 18. The app is not directed to children, and we do not knowingly collect personal information from anyone under 18. If you believe a minor has provided us with personal information, email team@trilogy-labs.com and we will delete it.</p>
+
 <h2>What Data We Collect</h2>
 <p>We collect the following categories of data:</p>
 <p><strong>Account Info:</strong> Name (optional), email, password hash, OAuth tokens (Google/Apple). Purpose: Sign-up, authentication, support. Retained until account deletion plus 180 days backups.</p>
-<p><strong>Photos and Videos:</strong> Reference and enhanced images, metadata (angle, timestamp). Purpose: Generate AI previews; cloud backup for user convenience. Collected when you take or upload photos in the app and when you request an AI enhancement. You can delete your photos anytime in the app.</p>
+<p><strong>Photos and Videos:</strong> Reference photos you capture or upload, AI-generated preview images, AI-generated short motion clips ("Bring to Life"), and Facial Dossier report files (which contain copies of your photos), plus metadata (angle, timestamp). Purpose: Generate AI previews, motion clips and Facial Dossier reports, and keep your results available across sessions and devices. Collected when you take or upload photos and when you request a generation. Stored in your account until you delete them or delete your account &mdash; they are not deleted automatically. You can delete your photos and results anytime in the app.</p>
+<p><strong>Facial Measurements:</strong> Landmark points and derived proportions, ratios and descriptive observations computed from your photos in order to produce your Facial Dossier. Purpose: Generate the report and answer your questions about it. Retained until account deletion.</p>
+<p><strong>Chat Transcripts:</strong> Your messages to the AI Advisor and the dossier chat, and the assistant's replies. Purpose: Maintain conversation continuity and let you reopen past conversations. Retained until account deletion.</p>
 <p><strong>Purchase and Trial:</strong> App store receipt IDs (Apple App Store or Google Play), subscription status, Superwall customer ID. Purpose: Unlock premium features, verify payments, enforce trials. Retained 10 years for accounting.</p>
 <p><strong>Device and Log:</strong> Device model, OS version, IP (country only), unique device ID. Purpose: Security, fraud prevention, paywall gating. Retained 90 days.</p>
 <p><strong>Crash and Diagnostics:</strong> Crash and performance reports collected automatically by the app stores (Apple App Store, Google Play) and app-usage events via Firebase Analytics. Purpose: Diagnose and fix crashes and understand which features are used. Retained 90 days by us; store-collected reports follow the store's own retention.</p>
@@ -50,34 +55,40 @@ footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #2a2a2a; fon
 <p>We do not show third-party ads inside Refina, and we never sell your personal data. We do measure our own ad campaigns: the Meta (Facebook) SDK shares your device advertising identifier and basic app events, such as install and subscription, with Meta Platforms, Inc. On iOS this happens only if you allow tracking when the system prompt appears. On Android you can limit it at any time in Settings, under Privacy and then Ads, by deleting or resetting your advertising ID. We never send your photos, your Facial Dossier, or your advisor conversations to Meta or to any advertising partner.</p>
 
 <h2>AI Processing and Third-Party Data Sharing</h2>
-<p>When you request an AI enhancement preview or a Facial Dossier, we send your facial photos, the profile details you provide (such as age, gender, and ethnicity), and your selected parameters to our third-party AI processing providers: Replicate, Inc., OpenAI, L.L.C., and OpenRouter, Inc. OpenRouter routes requests to the model providers that serve them, currently Google LLC (Gemini) and Alibaba Cloud (Qwen). These providers process your data solely to generate your requested results and do not use it to train their models. Processing occurs through our secure backend as an intermediary. This transmission occurs only after you voluntarily upload photos and request AI processing. By creating an account or agreeing to these terms, you consent to this sharing.</p>
+<p>When you request an AI enhancement preview, a motion clip or a Facial Dossier, we send your facial photos, the profile details you provide (such as age, gender, and ethnicity), and your selected parameters to our third-party AI processing providers. We use these providers under API terms that do not permit them to train their models on data submitted through the API, and we enable no-retention options where a provider offers them; we rely on those contractual commitments and cannot independently audit each provider's internal practices. Processing occurs through our secure backend as an intermediary, and only after you voluntarily upload photos and request AI processing.</p>
 <p><strong>What data is sent:</strong> Your facial photos, the profile details you provide (e.g., age, gender, ethnicity, goals), and the enhancement or analysis parameters you select (e.g., procedure type).</p>
-<p><strong>Who receives it:</strong> Replicate, Inc., OpenAI, L.L.C., and OpenRouter, Inc., each located in the United States, and through OpenRouter the model providers that serve the request, currently Google LLC (United States) and Alibaba Cloud (Singapore).</p>
+<p><strong>Who receives it:</strong> Replicate, Inc., OpenAI, L.L.C., Anthropic, PBC, OpenRouter, Inc., and Features &amp; Labels, Inc. (fal.ai), each located in the United States. Through OpenRouter, the model providers that serve the request &mdash; currently Google LLC (United States), Alibaba Cloud (Singapore) and Moonshot AI (Kimi, served through specialist inference hosts, currently Fireworks AI, Together AI and Baseten). Through fal.ai, the MiniMax video model used to generate motion clips. Not every provider receives every request; which are involved depends on the feature you use and on availability at the time.</p>
 
 <h2>Data Sharing (Sub-processors)</h2>
 <p><strong>Google Firebase:</strong> Backend hosting and storage. Location: US/EU. Safeguard: EU SCCs and Data Privacy Framework.</p>
 <p><strong>Replicate:</strong> AI facial enhancement processing. Location: US. Safeguard: Transient processing only; no retention.</p>
 <p><strong>OpenAI:</strong> AI image generation for previews and dossier reports. Location: US. Safeguard: API data not used for model training.</p>
+<p><strong>Anthropic:</strong> Vision analysis of dossier photos (skin tone and colour analysis) and generation of dossier report text. Location: US. Safeguard: API data not used for model training.</p>
 <p><strong>OpenRouter:</strong> Routing layer for AI facial analysis, dossier report text, and advisor chat. Location: US. Safeguard: API data not used for model training.</p>
-<p><strong>Google (Gemini) and Alibaba Cloud (Qwen):</strong> Model providers reached through OpenRouter. Location: US and Singapore. Safeguard: API data not used for model training; EU SCCs where applicable.</p>
+<p><strong>Google (Gemini), Alibaba Cloud (Qwen) and Moonshot AI (Kimi):</strong> Model providers reached through OpenRouter. Kimi is served by specialist inference hosts (currently Fireworks AI, Together AI and Baseten) acting on Moonshot's behalf. Location: US and Singapore. Safeguard: API data not used for model training; EU SCCs where applicable.</p>
+<p><strong>fal.ai (Features &amp; Labels, Inc.) and MiniMax:</strong> Generation of short AI motion clips from a preview image ("Bring to Life"); fal.ai routes the request to the MiniMax video model. Location: US. Safeguard: API data not used for model training.</p>
 <p><strong>Meta Platforms:</strong> Advertising measurement for our own campaigns (advertising identifier and app events only; never photos or reports). Location: US. Safeguard: EU SCCs and Data Privacy Framework.</p>
 <p><strong>Superwall:</strong> Subscription validation. Location: US. Safeguard: Standard contractual clauses.</p>
 <p><strong>Apple / Google Play:</strong> Payment processing. Location: Your region. Safeguard: PCI-DSS / PSD2.</p>
 
 <h2>Third-Party Data Protection</h2>
-<p>We require all third parties we share personal data with (including Replicate, OpenAI, OpenRouter and the model providers it routes to, Firebase, Superwall, Meta Platforms, and payment processors) to maintain data protection standards equivalent to or stronger than those described in this policy, including through contractual obligations such as standard contractual clauses (SCCs) where applicable.</p>
+<p>We require all third parties we share personal data with (including Replicate, OpenAI, Anthropic, OpenRouter and the model providers it routes to, fal.ai and the video model it routes to, Firebase, Superwall, Meta Platforms, and payment processors) to maintain data protection standards equivalent to or stronger than those described in this policy, including through contractual obligations such as standard contractual clauses (SCCs) where applicable.</p>
 
 <h2>Facial Data Protection</h2>
-<p>Data Minimization: Only required photos are collected. User Control: You can delete your facial data anytime. Secure Processing: AI processing via Firebase Cloud Functions. No Identification: No facial recognition used. Processing Limitation: Used only for AI preview and Facial Dossier generation. Encryption: All facial images encrypted in transit (TLS 1.2+) and at rest (AES-256).</p>
+<p>Data Minimization: Only required photos are collected. User Control: You can delete your facial data anytime. Secure Processing: AI processing via Firebase Cloud Functions. No Identification: We do not use facial recognition to identify you, and we do not match your photos against any database of identified people or share them for identification purposes. Processing Limitation: Used only to generate the AI previews, motion clips and Facial Dossier reports you request. Encryption: All facial images encrypted in transit (TLS 1.2+) and at rest (AES-256).</p>
 
-<h2>Age &amp; Medical Disclaimer</h2>
-<p>AI face previews are for illustration only — not medical advice. Consult a licensed professional before any cosmetic procedure.</p>
+<h2>Medical Disclaimer</h2>
+<p>Refina is a cosmetic visualization and educational tool. It is <strong>not medical advice, not a diagnosis, and not a medical device</strong>, and using it does not create a doctor-patient relationship.</p>
+<p><strong>AI previews</strong> are illustrative renderings, not predictions. They are not a simulation of surgery and do not forecast the result of any procedure. <strong>The Facial Dossier</strong> is a descriptive, automated analysis of your photographs; its observations, measurements and comparisons are generated by AI, are approximate, and may be inaccurate. It is not a clinical assessment and must not be used to diagnose or treat any condition. <strong>The AI Advisor and dossier chat</strong> are automated assistants, not clinicians, and can produce incorrect information. <strong>Results are not guaranteed</strong>, and Refina is not operated or supervised by physicians.</p>
+<p>Always consult a qualified, licensed professional before making any decision about a cosmetic procedure, medication or treatment. If you have a medical concern, seek care from a licensed provider; in an emergency, contact your local emergency services.</p>
 
 <h2>Your Rights</h2>
 <p>You may access, export, or delete your data anytime via Settings, Account, Delete Account, or by emailing <a href="mailto:team@trilogy-labs.com">team@trilogy-labs.com</a>. See also: <a href="/refina/delete-account.html">how to delete your account and data</a>.</p>
 
 <h2>Data Retention and Deletion</h2>
-<p>Account data kept while account exists. User-deleted photos removed immediately. AI processing files deleted immediately after processing.</p>
+<p>Your photos, generated previews, motion clips and Facial Dossier reports are <strong>kept in your account until you delete them or delete your account</strong>. They are not deleted on a timer, because the app is designed to let you reopen your results later and across devices. You can delete individual photos and results at any time in the app, and deleting your account removes all of it.</p>
+<p>When you delete something it is removed from active storage immediately. Our cloud storage provider keeps deleted objects in a recoverable state for a short window (currently 7 days) before permanent destruction, and encrypted backups are purged within 180 days. Copies sent to AI providers for processing are governed by those providers' own retention terms, listed above.</p>
+<p>Account data is kept while the account exists. Purchase records are retained up to 10 years where tax and accounting law requires it, separately from your profile.</p>
 
 <h2>Contact</h2>
 <p>Email: <a href="mailto:team@trilogy-labs.com">team@trilogy-labs.com</a></p>
